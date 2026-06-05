@@ -37,7 +37,7 @@ export const Route = createFileRoute("/")({
           alumniOf: "National Institute of Technology Agartala",
           sameAs: [
             "https://github.com/Yudaya3006",
-            "https://www.linkedin.com/in/chelluri-yudayamadhavi",
+            "https://www.linkedin.com/in/chelluri-yudayamadhavi-462b16290/",
           ],
         }),
       },

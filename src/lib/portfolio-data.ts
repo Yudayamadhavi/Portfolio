@@ -10,7 +10,7 @@ export const PROFILE = {
   email: "yudaya2004@gmail.com",
   phone: "+91 9177904194",
   location: "India",
-  linkedin: "https://www.linkedin.com/in/chelluri-yudayamadhavi",
+  linkedin: "https://www.linkedin.com/in/chelluri-yudayamadhavi-462b16290/",
   linkedinLabel: "Chelluri Yudayamadhavi",
   github: "https://github.com/Yudaya3006",
   githubLabel: "Yudaya3006",
