@@ -8,9 +8,9 @@ import { useState } from "react";
 import { toast } from "sonner";
 import {
   PROFILE, STATS, SKILLS, EXPERIENCE, PROJECTS, ACHIEVEMENTS,
-  POSITIONS, CERTIFICATIONS, EDUCATION, TYPING_ROLES,
+  POSITIONS, CERTIFICATES, EDUCATION, TYPING_ROLES,
 } from "@/lib/portfolio-data";
-import profilePic from "@/assets/profile.jpg";
+import profilePic from "@/assets/madhavi.jpeg";
 import { Particles } from "./Particles";
 import { TypingText } from "./TypingText";
 import { Counter } from "./Counter";
@@ -131,18 +131,35 @@ export function About() {
         <SectionHeading eyebrow="About Me" title="A builder at the intersection of AI & engineering" />
         <div className="grid gap-8 md:grid-cols-3">
           <Reveal className="glass md:col-span-2 rounded-2xl p-8">
-            <p className="text-lg leading-relaxed text-foreground/90">
-              I&apos;m <span className="text-gradient font-semibold">CH. Yudaya Madhavi</span>, currently a{" "}
-              <strong>Gen AI Intern at Amdocs</strong> and a final-year B.Tech student in Electronics and
-              Communication Engineering at <strong>NIT Agartala</strong>. I build LLM-powered agents,
-              agentic workflows, and full-stack solutions that solve real problems.
-            </p>
-            <p className="mt-4 text-muted-foreground">
-              My passion lies in <strong className="text-foreground">Generative AI, Agentic AI, and Machine Learning</strong>.
-              I love designing multi-agent systems, automating workflows, and shipping clean,
-              recruiter-grade products. Strong problem-solver, dependable teammate, and a continuous
-              learner who enjoys turning ambiguous problems into impactful products.
-            </p>
+            <div className="text-lg leading-relaxed text-foreground/90">
+               <p>
+                 I&apos;m <span className="text-gradient font-semibold">CH. Yudaya Madhavi</span>, currently a{" "}
+                 <strong>Gen AI Intern at Amdocs</strong> I completed my B.Tech in Electronics and
+                 Communication Engineering at <strong>NIT Agartala</strong>. I build AI-powered solutions,
+                 LLM-based applications, intelligent agents, and automation systems using modern technologies
+                 such as LangChain, LangGraph, Hugging Face, Agent SDKs, and FastAPI.
+               </p>
+
+               <p className="mt-4 text-muted-foreground">
+                 My passion lies in{" "}
+                 <strong className="text-foreground">
+                   Generative AI, Agentic AI, Machine Learning, and Software Development
+                 </strong>.
+                 I enjoy designing multi-agent systems, developing RAG-based applications,
+                 integrating AI workflows, and building scalable products that solve real-world problems.
+                 Through my internship and project experience, I have worked on agent orchestration,
+                 workflow automation, conversational AI, vector databases, and production-ready AI solutions
+                 that improve efficiency and decision-making.
+               </p>
+
+               <p className="mt-4 text-muted-foreground">
+                 Beyond technical skills, I bring strong problem-solving, teamwork, leadership, and
+                 communication abilities. As an active student leader and continuous learner,
+                 I thrive in collaborative environments and enjoy transforming complex ideas into impactful products.
+                 My goal is to leverage AI and emerging technologies to build innovative solutions and contribute
+                 meaningfully to forward-thinking engineering teams.
+               </p>
+             </div>
           </Reveal>
           <Reveal delay={0.1} className="grid gap-4">
             {[
@@ -294,9 +311,6 @@ export function Projects() {
                     <a href={p.github} target="_blank" rel="noreferrer" className="glass inline-flex flex-1 items-center justify-center gap-2 rounded-xl px-3 py-2 text-xs font-semibold transition hover:scale-[1.02]">
                       <Github className="h-3.5 w-3.5" /> Code
                     </a>
-                    <a href={p.demo} target="_blank" rel="noreferrer" className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[var(--brand)] to-[var(--brand-2)] px-3 py-2 text-xs font-semibold text-primary-foreground transition hover:translate-y-[-1px]">
-                      <ExternalLink className="h-3.5 w-3.5" /> Live Demo
-                    </a>
                   </div>
                 </div>
               </article>
@@ -361,15 +375,15 @@ export function Achievements() {
   );
 }
 
-/* ---------------- CERTIFICATIONS ---------------- */
-export function Certifications() {
+/* ---------------- CERTIFICATES ---------------- */
+export function Certificates() {
   const [open, setOpen] = useState<number | null>(null);
   return (
-    <section id="certifications" className="py-24">
+    <section id="certificates" className="py-24">
       <div className="mx-auto max-w-6xl px-4">
-        <SectionHeading eyebrow="Certifications" title="Credentials" />
+        <SectionHeading title="Certificates" />
         <div className="grid gap-5 md:grid-cols-2">
-          {CERTIFICATIONS.map((c, i) => (
+          {CERTIFICATES.map((c, i) => (
             <Reveal key={c.title} delay={i * 0.05}>
               <button
                 onClick={() => setOpen(i)}
@@ -397,9 +411,9 @@ export function Certifications() {
           >
             <div className="glass max-w-md rounded-2xl p-8 text-center" onClick={(e) => e.stopPropagation()}>
               <FileText className="mx-auto h-10 w-10 text-[var(--brand)]" />
-              <h3 className="mt-4 font-display text-2xl font-bold">{CERTIFICATIONS[open].title}</h3>
-              <div className="mt-1 text-sm text-[var(--brand-2)]">{CERTIFICATIONS[open].issuer}</div>
-              <p className="mt-3 text-sm text-muted-foreground">{CERTIFICATIONS[open].description}</p>
+              <h3 className="mt-4 font-display text-2xl font-bold">{CERTIFICATES[open].title}</h3>
+              <div className="mt-1 text-sm text-[var(--brand-2)]">{CERTIFICATES[open].issuer}</div>
+              <p className="mt-3 text-sm text-muted-foreground">{CERTIFICATES[open].description}</p>
               <button
                 onClick={() => setOpen(null)}
                 className="mt-6 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-[var(--brand)] to-[var(--brand-2)] px-5 py-2.5 text-sm font-semibold text-primary-foreground"

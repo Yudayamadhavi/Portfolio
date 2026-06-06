@@ -4,7 +4,7 @@ import { Navbar } from "@/components/portfolio/Navbar";
 import { Loader } from "@/components/portfolio/Loader";
 import {
   Hero, About, Stats, Skills, Experience, Projects,
-  Achievements, Certifications, Education, Contact, Footer,
+  Achievements, Certificates, Education, Contact, Footer,
 } from "@/components/portfolio/Sections";
 
 export const Route = createFileRoute("/")({
@@ -59,7 +59,7 @@ function Index() {
         <Experience />
         <Projects />
         <Achievements />
-        <Certifications />
+        <Certificates />
         <Education />
         <Contact />
       </main>

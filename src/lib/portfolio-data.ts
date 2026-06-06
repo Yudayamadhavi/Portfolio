@@ -14,7 +14,7 @@ export const PROFILE = {
   linkedinLabel: "Chelluri Yudayamadhavi",
   github: "https://github.com/Yudaya3006",
   githubLabel: "Yudaya3006",
-  resumeUrl: "/resume.html",
+  resumeUrl: "https://drive.google.com/file/d/1-KUe6s6tDQ_bIxOkInFAxKqmQFQazapu/view?usp=drivesdk",
 };
 
 export const TYPING_ROLES = [
@@ -28,17 +28,17 @@ export const STATS = [
   { label: "Major Projects", value: 2, suffix: "+" },
   { label: "Coding Problems Solved", value: 100, suffix: "+" },
   { label: "Internship", value: 1, suffix: "" },
-  { label: "Certifications", value: 2, suffix: "" },
+  { label: "Certificates", value: 2, suffix: "" },
   { label: "Leadership Roles", value: 2, suffix: "" },
 ];
 
 export const SKILLS: { category: string; items: string[] }[] = [
   { category: "Programming", items: ["Python", "C++", "SQL", "JavaScript"] },
   { category: "AI / ML", items: ["Machine Learning", "Generative AI", "LangChain", "LangGraph", "Hugging Face", "Pandas", "NumPy"] },
-  { category: "Agentic AI", items: ["AI Agents", "Multi-Agent Systems", "Agent Workflows", "Enterprise AI Automation", "LLM Integration"] },
-  { category: "Web Development", items: ["HTML", "CSS", "JavaScript", "FastAPI", "WebSockets", "REST APIs", "JSON"] },
-  { category: "Tools", items: ["Git", "GitHub", "Cursor", "VS Code", "Excel"] },
-  { category: "Soft Skills", items: ["Communication", "Teamwork", "Problem Solving", "Time Management", "Attention to Detail"] },
+  { category: "Agentic AI", items: ["AI Agents", "Multi-Agent Systems", "MCP", "SDK", "Agent Workflows", "Enterprise AI Automation", "LLM Integration"] },
+  { category: "Web Development", items: ["HTML", "CSS", "JavaScript", "React", "FastAPI", "WebSockets", "REST APIs", "JSON"] },
+  { category: "Tools", items: ["Git", "GitHub", "Cursor", "VS Code", "Excel", "Copilot", "Google Claude"] },
+  { category: "Soft Skills", items: ["Communication", "Teamwork", "Leadership", "Problem Solving", "Time Management", "Attention to Detail"] },
 ];
 
 export const EXPERIENCE = [
@@ -47,11 +47,11 @@ export const EXPERIENCE = [
     role: "Gen AI Intern",
     period: "Feb 2026 – Jun 2026",
     bullets: [
-      "Worked on the technology foundation of aOS, an open telco-specific GenAI platform.",
-      "Built LLM-powered agents and intelligent bots.",
-      "Integrated APIs and enterprise tools.",
-      "Developed agentic workflows for automation.",
-      "Supported intelligent automation and real-time task execution.",
+      "Building AI agents and intelligent assistants using LangChain, LangGraph, Agent SDKs, and Hugging Face models.",
+      "Developing multi-agent workflows, automation pipelines, and LLM-powered solutions tailored to client requirements.",
+      "Implemented RAG applications with vector databases for context-aware retrieval and knowledge-driven responses.",
+      "Built scalable AI backends and REST APIs using FastAPI, enabling real-time AI interactions and integrations.",
+      "Working on agent orchestration, memory management, tool calling, and enterprise AI automation to streamline business processes.",
     ],
   },
   {
@@ -80,8 +80,7 @@ export const PROJECTS = [
       "Forecasted 7-day progress trends",
     ],
     tech: ["Python", "Scikit-Learn", "Machine Learning"],
-    github: "https://github.com/Yudaya3006",
-    demo: "#",
+    github: "https://github.com/Yudaya3006/Health-fitness-app",
   },
   {
     title: "Customer Churn Prediction",
@@ -94,28 +93,14 @@ export const PROJECTS = [
       "Created Streamlit prediction dashboard",
     ],
     tech: ["Python", "Streamlit", "Pandas", "NumPy", "Scikit-Learn"],
-    github: "https://github.com/Yudaya3006",
-    demo: "#",
+    github: "https://github.com/Yudaya3006/Customer_churn_prediction",
   },
-  {
-    title: "AI Agent Automation System",
-    image: agentsImg,
-    description:
-      "Agentic AI system orchestrating multiple LLM-powered agents across workflows for enterprise-grade automation.",
-    bullets: [
-      "AI agent workflows",
-      "LLM-powered automation",
-      "Multi-agent orchestration",
-    ],
-    tech: ["LangChain", "LangGraph", "Hugging Face"],
-    github: "https://github.com/Yudaya3006",
-    demo: "#",
-  },
+
 ];
 
 export const ACHIEVEMENTS = [
   { title: "Foundation For Excellence (FFE) Scholar", icon: "Trophy" },
-  { title: "NMMS Scholarship Recipient", icon: "Award" },
+  
   { title: "Solved 100+ Coding Problems", icon: "Code2" },
   { title: "Inter-NIT Badminton Team — Girls Captain", icon: "Medal" },
   { title: "Represented NIT Agartala at NIT Trichy", icon: "Star" },
@@ -139,16 +124,18 @@ export const POSITIONS = [
   },
 ];
 
-export const CERTIFICATIONS = [
+export const CERTIFICATES = [
   {
     title: "SQL Certificate",
     issuer: "HackerRank",
     description: "Verified proficiency in SQL queries, joins, and aggregations.",
+    link: "https://drive.google.com/file/d/1EeARD8qL_vugNSH3XkC7BaXaQIAt8_9E/view"
   },
   {
     title: "SAWIT.AI Learnathon",
     issuer: "Generative AI Fundamentals",
     description: "Foundational training in Generative AI concepts and tooling.",
+    link: "https://drive.google.com/file/d/1hz0CNQgsYJxJZ5p0MzpXcMN8qgrIVOJ-/view"
   },
 ];
 
