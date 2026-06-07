@@ -381,7 +381,7 @@ export function Certificates() {
   return (
     <section id="certificates" className="py-24">
       <div className="mx-auto max-w-6xl px-4">
-        <SectionHeading title="Certificates" />
+        <SectionHeading eyebrow="" title="Certificates" />
         <div className="grid gap-5 md:grid-cols-2">
           {CERTIFICATES.map((c, i) => (
             <Reveal key={c.title} delay={i * 0.05}>
